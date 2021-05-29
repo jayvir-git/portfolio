@@ -233,15 +233,27 @@
       </section>
     </main>
     <script>
-      const nav_links = document.querySelectorAll('.nav_item');
+      
       const nav = document.querySelector('nav').querySelectorAll('a');
 
-      nav_links.forEach((nav_link) => {
-        nav_link.addEventListener('click', function () {
-          nav.forEach((link) => link.classList.remove('active'));
-          nav_link.classList.add('active');
+      const sections = document.querySelectorAll('section');
+      window.addEventListener('scroll', () => {
+        let current = '';
+        sections.forEach((section) => {
+          const sectionTop = section.offsetTop;
+          const sectionHeight = section.clientHeight;
+          if (pageYOffset >= sectionTop - sectionHeight / 3) {
+            current = section.getAttribute('id');
+          }
         });
-      });
+
+        nav.forEach((link) => {
+          link.classList.remove('active');
+          if (link.classList.contains(current)) {
+            link.classList.add('active');
+          }
+        });
+    });
     </script>
   </body>
 </html>
