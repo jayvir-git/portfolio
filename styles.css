@@ -42,8 +42,10 @@ header {
 
 main {
   margin-top: 85px;
-  height: 100%;
-  width: 100vw;
+  /* height: 100%;
+  width: 100vw; */
+  height: 100vh;
+  width: 100%;
   padding: 0;
   /* border: 2px solid black; */
   /* background-color: aquamarine; */
@@ -79,9 +81,11 @@ nav a.active {
 }
 
 #home {
-  min-height: 90vh;
-  min-width: 100%;
+  /* min-height: 90vh;
+  min-width: 100%; */
   /* padding-top: 1rem; */
+  height: 100vh;
+  width: 100%;
   color: white;
   display: flex;
   flex-direction: column;
@@ -124,8 +128,10 @@ nav a.active {
 }
 
 #about {
-  height: 90vh;
-  min-width: 100vw;
+  /* height: 90vh;
+  min-width: 100vw; */
+  height: 100vh;
+  width: 100%;
   padding-top: 1rem;
   display: flex;
   flex-direction: column;
@@ -229,8 +235,10 @@ nav a.active {
 }
 
 #projects {
-  height: 90vh;
-  min-width: 100vw;
+  /* height: 90vh;
+  min-width: 100vw; */
+  height: 100vh;
+  width: 100%;
   padding-top: 1rem;
   display: flex;
   flex-direction: column;
@@ -280,8 +288,10 @@ nav a.active {
 }
 
 #contact {
-  height: 90vh;
-  min-width: 100vw;
+  /* height: 90vh;
+  min-width: 100vw; */
+  height: 100vh;
+  width: 100%;
   padding-top: 1rem;
   display: flex;
   flex-direction: column;
